@@ -1,0 +1,412 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.header img{
+	position: relative;
+}
+.header_head{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+
+.header_title{	
+	color: white;
+	font-size: 48px;
+}
+.header_text{
+	color: white;
+	font-size: 36px;
+}
+
+/*----------------------------
+	nav
+ *-------------*/
+.wrapper{
+	max-width: 1080px;
+	margin: auto;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+
+.nav-list{
+	display: flex;
+	
+}
+.nav-item a{
+	margin: 0 0 0 48px;
+	font-size: 21px;
+	color: #222222;
+	
+}
+/*----------------------------
+ About
+ *---------------*/
+
+.about_title{
+	text-align: center;
+	flex-direction: column;
+}
+.about_title h3{
+	margin: 24px 0 64px;
+}
+.about_title p{
+	margin: 40px;
+}
+.about_title img{
+	width: 100%;
+	height: 80%;
+	padding: 60px 0 0px;
+}
+
+.about_text{
+	color: #ffd61a;
+	font-size: 24px;
+	text-align: center;
+	margin: 120px 0 24px;
+}
+/*----------------------------------
+ Course
+ *---------------*/
+.course_title{
+	font-size: 24px;
+	text-align: center;
+}
+
+.course_header{
+	margin: 64px;
+}
+.course_p{
+	text-align: center;
+	margin: 30px 0;
+}
+
+.course_text_01{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.course_text_02{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+.course_text_02 p{
+	width: 68%;
+}
+.course_class{
+	font-size: 24px;
+	color: #222222;
+	margin: 0 0 40px 48px;
+	text-align: center;
+}
+.course_text_01 img{
+	width: 50%;
+}
+.course_text_01 p{
+	padding: 0 0 0 48px;
+}
+.teacher_text_2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 48px 0 150px;
+}
+.teacher_title{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.teacher_title p{
+	margin: 0 48px 0 0px;
+	width: 68%;
+}
+.teacher_h4{
+	font-size: 24px;
+	font-weight: bold;
+	color: #222222;
+	margin: 0 0 40px 0;
+}
+.teacher_text{
+	display:flex;
+}
+.teacher_text img{
+	width: 50%;
+}
+
+.test_title{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.test_title p{
+	margin: 0 0 0 48px;
+	width: 68%;
+}
+.test_title img{
+	width: 50%;
+}
+.test_text{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.test_h4{
+	font-size: 24px;
+	color: #222222;
+	margin: 0 0 40px 48px;
+	text-align: center;
+}
+
+
+/*-----------------------------------
+ News
+ *---------------*/
+.news{
+	background-color: #fafafa;
+}
+.news_header{
+	max-width: 960px;
+	margin: auto;
+}
+.news_list{
+	display: flex;
+}
+.news_item{
+	width: 33.333%;
+}
+.news_title{
+	padding: 64px;
+}
+.news_title_1{
+	color: yellow;
+	font-size: 24px;
+	text-align: center;
+
+}
+.news_title_2{
+	text-align: center;
+}
+.news_eyecatch{
+	margin: 0px 32px 32px;
+}
+
+.news_heading{
+	margin: 0 32px 24px;
+}
+.news_p{
+	margin: 0 0 0 32px;
+}
+/*-----------------------------------
+ More
+ *---------------*/
+.btn{
+	display: block;
+	width: 300px;
+	margin:  56px auto;
+	padding: 12px 0;
+	background-color: yellow;
+	font-size: 21px;
+	color: white;
+	text-align: center;
+}
+/*-----------------------------------
+ Access
+ *---------------*/
+.access_title{
+	text-align: center;
+	margin: 64px 0;
+}
+.map{
+	text-align: center;
+	margin: 64px 0;
+}
+.access-outer{
+	display: flex;
+	justify-content: center;
+	margin: 64px 0 80px;
+}
+.access-outer-text{
+	padding: 0 50px;
+}	
+.access-item{
+	margin: 24px 0;
+	
+}
+
+.access_text{
+	font-size: 24px;
+}
+/*-----------------------------------
+ Contact
+ *---------------*/
+.contact_text_1{
+	padding: 40px;
+	text-align: center;
+}
+.contact_title{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.contact_text_2{
+	text-align: center;
+	margin: 0 0 32px 0;
+}
+.contact_text_3{
+	text-align: center;
+	margin:0 0 80px 0;
+}
+/*-----------------------------------
+ form
+ *---------------*/
+.form_wrapper{
+	width: 700px;
+	margin: auto;
+}
+.form_inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+.form_title{
+	width: 152px;
+	margin: 0 20px 0 0;
+	padding: 0 0 8px 0;
+}
+.form_item{
+	width: 500px;
+	margin: 0 0 32px;
+}
+.form_list{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.form_parts{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	width: 328px;
+	height: 36px;
+	border: 1px solid #bfbfbf;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input[type*="radio"]{
+	margin: 20px 10px;
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 1px solid #f0ebe5;
+
+}
+input[type*="radio"]:checked{
+	background-color: #f0ebe5;
+}
+.form_label{
+	margin: 24px 0;
+	line-height: 2px;
+}
+.detail{
+	padding: 8px;
+	width: 328px;
+	height: 108px;
+	border: 1px solid;
+	border-color: #bfbfbf;
+	margin-bottom: 40px;
+}
+
+.sousin_text{
+	background-color: yellow;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	padding: 11.5px 0;
+	margin: 0 auto;
+	width: 298px;
+}
+/*-----------------------------------
+ footer
+ *---------------*/
+
+.footer{
+	background-color: #707070;
+	padding: 32px 0;
+	margin-top: 80px;
+	position: relative;
+}
+.text_center{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.footer .wrapper{
+	position: relative;
+}
+.btn_pagetop{
+	position: absolute;
+	top: -100px;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #707070;
+
+}
+.icon-up{
+	display: block;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 30px;
+}
+.copyrights{
+	font-size: 18px;
+	color: white;
+}
+	
